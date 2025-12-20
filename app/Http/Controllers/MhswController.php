@@ -51,7 +51,8 @@ class MhswController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        $row = Mhsw::findOrFail($id);
+        return view('mhsw.edit', compact('row'));
     }
 
     /**
@@ -59,7 +60,14 @@ class MhswController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        $row = Mhsw::findOrFail($id);
+        $row->update([
+            'mhsw_nim' => $request->mhsw_nim,
+            'mhsw_nama' => $request->mhsw_nama,
+            'mhsw_alamat' => $request->mhsw_alamat,
+        ]);
+
+        return redirect('/mhsw');
     }
 
     /**
@@ -67,6 +75,9 @@ class MhswController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $row = Mhsw::findOrFail($id);
+        $row->delete();
+
+        return redirect('/mhsw');
     }
 }

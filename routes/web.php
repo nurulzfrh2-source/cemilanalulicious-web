@@ -16,3 +16,5 @@ Route::get('/mhsw', [App\Http\Controllers\MhswController::class, 'index']);
 Route::get('/mhsw/create', [App\Http\Controllers\MhswController::class, 'create']);
 Route::post('/mhsw', [App\Http\Controllers\MhswController::class, 'store']);
 Route::get('/mhsw/{id}/edit', [App\Http\Controllers\MhswController::class, 'edit']);
+Route::put('/mhsw/{id}', [App\Http\Controllers\MhswController::class, 'update']);
+Route::delete('/mhsw/{id}', [App\Http\Controllers\MhswController::class, 'destroy']);
