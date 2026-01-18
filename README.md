@@ -1,3 +1,40 @@
+# 🍔 Cemilan Alulicious - Web App 
+Aplikasi manajemen penjualan cemilan (Burger, Dimsum, dan lainnya) berbasis web yang dibangun menggunakan Framework Laravel.
+
+---
+
+## 🚀 Fitur Utama
+* **Dashboard Statistik**: Ringkasan data produk, kategori, dan pesanan.
+* **Manajemen Produk**: Tambah, edit, dan hapus menu cemilan lengkap dengan foto asli.
+* **Kategori Menu**: Pengelompokan cemilan (Serba Burger, Serba Dimsum, dll).
+* **Sistem Pesanan**: Mencatat data pesanan pelanggan yang masuk.
+
+---
+
+## 🛠️ Teknologi yang Digunakan
+| Komponen | Teknologi |
+| :--- | :--- |
+| **Framework** | Laravel (PHP) |
+| **Database** | MySQL (XAMPP) |
+| **Frontend** | Blade Engine & Bootstrap |
+| **Version Control** | Git & GitHub |
+
+---
+
+## 📝 Cara Menjalankan Proyek
+1. **Clone Repository**: Download atau clone proyek ini ke laptop.
+2. **Setup Database**:
+   * Buat database baru di phpMyAdmin dengan nama `laravel_app`.
+   * Import file **`laravel_app.sql`** yang tersedia di folder utama proyek ini.
+3. **Konfigurasi .env**: Pastikan `DB_DATABASE=laravel_app` di file `.env`.
+4. **Jalankan Server**: Buka terminal dan ketik `php artisan serve`.
+5. **Akses Web**: Buka `http://localhost:8000` di browser.
+
+---
+**Dibuat oleh:** [Nurul Zafirah] - nurulzfrh2-source
+
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
